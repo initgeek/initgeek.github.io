@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+		<link rel="icon" type="image/png" href="res/icon.png" sizes="64x64" />
 	<title>initGeek</title>
 	<style type="text/css">
 		@font-face {
@@ -26,18 +27,55 @@
 			text-align: center;
 		}
 
+		.container {
+			margin: 0 auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
 		p {
 			font-family: 'vazir-t';
+		}
+
+		img {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			border: none;
+			-webkit-transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+			-moz-transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+			-o-transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+			transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+		}
+
+		img:hover {
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+
+		@media only screen and (max-width: 480px) {
+			h1 {
+				font-size: 17px;
+			}
 		}
 	</style>
 </head>
 <body>
 
+	<div class="container">
 	<img src="res/logo.jpg" alt="initGeek Logo">
 
 	<h1>سلام، به 
 		<span style="color: #20c20e;">اینیت‌گیک</span>
 		 خوش آمدید</h1>
 	<p>وبسایت هنوز در دست ساخت است...</p>
+</div>
 </body>
 </html>
