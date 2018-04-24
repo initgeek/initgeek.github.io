@@ -42,7 +42,7 @@
 			font-family: 'vazir-t';
 		}
 
-		img {
+		#logo {
 			width: 80px;
 			height: 80px;
 			border-radius: 50%;
@@ -53,7 +53,7 @@
 			transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
 		}
 
-		img:hover {
+		#logo:hover {
 			-webkit-transform: scale(1.2);
 			-moz-transform: scale(1.2);
 			-o-transform: scale(1.2);
@@ -65,17 +65,44 @@
 				font-size: 17px;
 			}
 		}
+
+		#key-icon>img {
+			width: 40px;
+		}
+
+		#key-icon {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			-webkit-transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+			-moz-transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+			-o-transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+			transition: all 400ms cubic-bezier(0.37, -0.37, 0.57, 1.51);
+		}
+
+		#key-icon:hover {
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+
 	</style>
 </head>
 <body>
 
 	<div class="container">
-	<img src="res/logo.jpg" alt="initGeek Logo">
+	<img id='logo' src="res/logo.jpg" alt="initGeek Logo">
 
 	<h1>سلام، به 
 		<span style="color: #20c20e;">اینیت‌گیک</span>
 		 خوش آمدید</h1>
-	<p>وبسایت هنوز در دست ساخت است...</p>
-</div>
+	<p>...وبسایت هنوز در دست ساخت است</p>
+	</div>
+	
+	<a href="https://www.hamidadib.com"  id='key-icon' target="_blank">
+		<img src="res/keyboard.png" alt="hamidadib.com">
+	</a>
+
 </body>
 </html>
